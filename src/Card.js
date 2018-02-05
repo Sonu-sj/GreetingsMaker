@@ -1,10 +1,30 @@
-//Stateless
-//Border and image sources
+import {
+  Platform,
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  LayoutAnimation
+} from 'react-native';
 
-import 'Slide' from './SlideList.js';
+import React, { Component } from 'react';
+import styles from './StyleSheet.js';
 
-const Card = function(){
-//Map Over Slides
-<Image src="">
+
+const Card = ()=>{
+
+ return (<View>
+<Image style={Lstyles.imgStyle} source={require('../images/img1.png')}/>
+</View>)
 
 }
+
+const Lstyles = StyleSheet.create({
+imgStyle:{
+  height:300,
+  width:100,
+  marginTop:20
+}
+});
+
+export default Card;
