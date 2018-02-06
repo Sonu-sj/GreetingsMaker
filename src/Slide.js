@@ -3,7 +3,8 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View,
+  LayoutAnimation
 } from 'react-native';
 import React, { Component } from 'react';
 import styles from './StyleSheet.js'
@@ -17,10 +18,11 @@ import styles from './StyleSheet.js'
 //container
 import Card from './Card.js';
 
-const Slide = ()=>{
+const Slide = (props)=>{
 
   return (<View>
-  <Card/>
+  <Text style={styles.white}>Slide {props.Caption}</Text>
+  <Card {...props}/>
   </View>
 )
 

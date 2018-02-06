@@ -11,10 +11,10 @@ import React, { Component } from 'react';
 import styles from './StyleSheet.js';
 
 
-const Card = ()=>{
+const Card = (props)=>{
 
  return (<View>
-<Image style={Lstyles.imgStyle} source={require('../images/img1.png')}/>
+<Image style={Lstyles.imgStyle} source={props.source}/>
 </View>)
 
 }
